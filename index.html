@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jane Doe - Data Analyst</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SzlrxWtv1B2Abh2Bw5WZ2r9Fj3p2p2quv7Ckk+A1R1p5MXy4HqZXgGUrY0ek43tG8oXkT2S9Wrh5PFFR5jC5lA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="hero">
@@ -14,27 +15,39 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="about">
             <h2>About Me</h2>
-            <p>Hello! I'm Jane Doe, a data analyst with four years of professional experience. I specialize in transforming complex datasets into actionable insights that drive business success.</p>
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80" alt="Working at desk" class="about-img">
+                <p>Hello! I'm Jane Doe, a data analyst with four years of professional experience. I specialize in transforming complex datasets into actionable insights that drive business success.</p>
+            </div>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>Power BI</li>
-                <li>Azure Databricks</li>
-                <li>Jira &amp; Confluence</li>
-                <li>Azure ML</li>
-                <li>Snowflake</li>
-                <li>SQL and PL/SQL</li>
+            <ul class="skills-list">
+                <li><i class="fa-brands fa-python"></i> Python</li>
+                <li><i class="fa-solid fa-chart-column"></i> Power BI</li>
+                <li><i class="fa-solid fa-cloud"></i> Azure Databricks</li>
+                <li><i class="fa-solid fa-list-check"></i> Jira &amp; Confluence</li>
+                <li><i class="fa-solid fa-robot"></i> Azure ML</li>
+                <li><i class="fa-solid fa-database"></i> Snowflake</li>
+                <li><i class="fa-solid fa-code"></i> SQL and PL/SQL</li>
             </ul>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="projects">
             <h2>Projects</h2>
-            <p>Coming soon!</p>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="https://images.unsplash.com/photo-1581091870627-3b24ca32966d?auto=format&fit=crop&w=600&q=60" alt="Project dashboard">
+                    <p>Sales Dashboard with Power BI</p>
+                </div>
+                <div class="project-item">
+                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de1cd0e?auto=format&fit=crop&w=600&q=60" alt="Data pipeline">
+                    <p>Data Pipeline on Azure</p>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="contact-section">

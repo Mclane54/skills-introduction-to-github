@@ -12,8 +12,21 @@ header.hero {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
     position: relative;
+    overflow: hidden;
+}
+
+header.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    z-index: -1;
+    filter: brightness(0.5);
 }
 
 header.hero h1 {
@@ -71,11 +84,34 @@ ul li {
     position: relative;
 }
 
-ul li::before {
+ul:not(.skills-list) li::before {
     content: '✔';
     position: absolute;
     left: 0;
     color: #6e8efb;
+}
+
+.skills-list li {
+    padding-left: 0;
+    position: relative;
+    margin: 8px 0;
+}
+
+.skills-list li i {
+    margin-right: 8px;
+    color: #6e8efb;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-img {
+    max-width: 250px;
+    border-radius: 8px;
 }
 
 .contact-section {
@@ -113,4 +149,22 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     background: #a777e3;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-item p {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 500;
 }
